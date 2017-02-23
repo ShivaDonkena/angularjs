@@ -2,12 +2,25 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="myapp.js">
-
 </script>
+<link rel="stylesheet" type="text/css" href="angular.css">
 <body>
-
 <div ng-app="myapp" ng-controller="mycontroller">
-{{ firstName + " " + lastName }}
+<input type="text"  ng-model="values">
+<p>{{values}}</p>
+<p>{{name}}</p>
+<table>
+  <tbody>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Branch</th>
+    <tr ng-repeat="x in numbers">
+        <td>{{x.name}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.branch}}</td>
+      </tr>
+  </tbody>
+</table>
 </div>
 </body>
 </html>
