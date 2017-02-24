@@ -7,8 +7,10 @@
 <body>
 <div ng-app="myapp" ng-controller="mycontroller">
 <input type="text"  ng-model="values">
-<p>{{values}}</p>
-<p>{{name}}</p>
+<input type="checkbox" ng-model="myvalue" ng-model="checked">show name</input>
+<h1 ng-show="myvalue">{{values}}</h1>
+<h1>{{myvalue}}</h1>
+<h1>{{myWelcome}}</h1>
 <table>
   <tbody>
     <th>Name</th>
