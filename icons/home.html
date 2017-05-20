@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <script src="js/angular.min.js"></script>
+        <script src="js/angular-cookies.js"></script>
+        <script src="js/angular-cookies.min.js">  </script>
+<link rel="stylesheet" href="js/angular-material.min.css">
+<link rel="stylesheet" href="js/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-aria.min.js"></script>
+<script src="js/angular-messages.min.js"></script>
+<script src="js/angular-material.min.js"></script>
+        <script src="home.js"></script>
+  <style>
+   .carousel-inner > .item > img,
+   .carousel-inner > .item > a > img {
+       width: 90%;
+       margin: auto;
+   }
+   </style>
+</head>
+<body ng-app="MyApp">
+  <div ng-controller="AppCtrl" class="sample tabsdemoDynamicTabs" layout="column" ng-cloak="" >
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+     <md-truncate style="position: absolute; left: 30px; right: 100px; top: 20px; bottom: 13px;">MOTHER THERESA CO-EDUCATION HIGH SCHOOL</md-truncate>
+       <span flex=""></span>
+                <md-button aria-label="Twitter" class="md-fab md-raised md-mini" ><a href="#/www.google.com" target="_blank">
+                <img ng-src="icons/facebbok.png" align="middle" width="30px" height="30px" style="position: absolute; left: 5px; right: 100px; top: 5px;"></a>
+                </md-button>
+                <md-button aria-label="Facebook" class="md-fab md-raised md-mini"><a href="www.google.com">
+                <img ng-src="icons/twitter.png" align="middle" width="30px" height="30px" style="position: absolute; left: 5px; right: 100px; top: 5px;"></a>
+                </md-button>
+      </div>
+    </md-toolbar>
+    <md-content class="md-padding" width=10%>
+    <md-tabs  md-selected=selectedtab md-border-bottom="" md-autoselect="" height=200px>
+      <md-tab label="HOME" onclick="">
+        <div class="floatLeft" width="30%">
+        <div class="container" >
+          <br>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="icons/slide1.jpg" alt="Chania" width="50%" height="50%">
+                <div class="carousel-caption">
+                  <h3>Chania</h3>
+                </div>
+              </div>
+              <div class="item">
+                <img src="icons/slide1.jpg" alt="Chania" width="50%" height="50%">
+                <div class="carousel-caption">
+                  <h3>Chania</h3>
+                </div>
+              </div>
+              <div class="item">
+                <img src="icons/slide2.jpg" alt="Flower" width="50%" height="50%">
+                <div class="carousel-caption">
+                  <h3>Flowers</h3>
+                </div>
+              </div>
+              <div class="item">
+                <img src="icons/slide3.jpg" alt="Flower" width="50%" height="50%">
+                <div class="carousel-caption">
+                  <h3>Flowers</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+             </a>
+             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+             </a>
+          </div>
+        </div>
+        <md-content class="md-padding" layout-xs="column" layout="row" layout-align="center center" >
+          <div flex-xs="" flex-gt-xs="20" layout="column">
+            <md-card md-colors="{background: 'blue'}">
+              <md-card-title>
+                <md-card-title-media>
+                  <img src="icons/student.png" alt="Chania" width="100%" height="60%">
+                  <p style="font-size:150%" align="center">CGPA: 9.7/10</p>
+                </md-card-title-media>
+              </md-card-title>
+            </md-card>
+          </div>
+       <div flex-xs="" flex-gt-xs="20" layout="column">
+        <md-card md-colors="{background: 'blue'}">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/student.png" alt="Chania" width="100%" height="60%">
+              <p style="font-size:150%" align="center">CGPA: 9.8/10</p>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+      <div flex-xs="" flex-gt-xs="20" layout="column">
+        <md-card md-colors="{background: 'blue'}">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/student.png" alt="Chania" width="100%" height="60%">
+              <p style="font-size:150%" align="center">CGPA: 9.7/10</p>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+      <div flex-xs="" flex-gt-xs="20" layout="column">
+        <md-card md-colors="{background: 'blue'}">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/student.png" alt="Chania" width="100%" height="60%">
+              <p style="font-size:150%" align="center">CGPA: 9.7/10</p>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+    </md-content>
+</div>
+    <div class="floatRight" >
+          <img ng-src="icons/newsnupdate.jpg" style="margin-left:0%; width:100%; height:100%"></img>
+          <marquee direction="up" behavior="scroll" scrollamount="5" width="100%" height="100%">
+      <ul ng-repeat="item in allItems" style="font-size:150%">
+        <li>
+          {{item}}
+        </li>
+      </ul>
+        </marquee>
+    </div>
+
+
+      </md-tab>
+      <md-tab label="MANAGEMENT" onclick="">
+  <h1 align="center">MANAGEMENT MEMBERS</h1>
+<table border=1 ALIGN="CENTER" bgcolor="#607D8B" style="width: 60%; left: 30px; right: 100px; top: 20px; bottom: 13px;" class="hovertable" border="0" >
+<tbody>
+<tr>
+<td style="text-align: center;" height="125" width="125"><img style="text-align: center;" alt="Engineering courses" src="icons/MOTHERTHERESA.jpg" height="165" width="110" />&nbsp;</td>
+<td><strong>MRS B SUBHASHINI</strong><br />PRINCIPAL</td>
+</tr>
+<tr>
+<td style="text-align: center;" height="125" width="125">&nbsp;<img style="text-align: center;" src="icons/MOTHERTHERESA.jpg" height="136" width="110" /></td>
+<td><strong>MRS SIRISHA</strong><br />VICE PRINCIPAL</td></tr>
+<tr>
+<td style="text-align: center;" height="125" width="125"><img alt="Aeronautical Engineering" src="icons/MOTHERTHERESA.jpg" height="136" width="110"/>&nbsp;</td>
+<td><strong>MRS SAILAJA</strong><br />VICE PRINCIPAL</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+      </md-tab>
+      <md-tab label="FACILITIES" onclick="" background-color="536DFE">
+        <div class="carddemoBasicUsage">
+        <md-content class="md-padding" layout-xs="column" layout="row" layout-align="center center" >
+       <div flex-xs="" flex-gt-xs="40" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/bus.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="" background-color="000000">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/bus.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+      <div flex-xs="" flex-gt-xs="40" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/computer.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/computer.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+    </md-content>
+  </div>
+      </md-tab>
+      <md-tab label="INFRASTRUCTURE" onclick="">
+        <div class="carddemoBasicUsage">
+        <md-content class="md-padding" layout-xs="column" layout="row" height="500px" layout-align="center center">
+       <div flex-xs="" flex-gt-xs="40" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/building2.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/building2.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+</div>
+ <div flex-xs="" flex-gt-xs="40" layout="column" align="left">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/building2.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/building2.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+    </md-content>
+  </div>
+      </md-tab>
+
+      <md-tab label="FEE" onclick="" height=800>
+      <table border=1 height="500px" width="900px"  align="CENTER" bgcolor="white" cellpadding=10>
+        <caption>FEE STRUCTURE</caption>
+<tr>
+<tH>CLASS</th>
+<th>SCHOOL FEE</th>
+<th>TUTION FEE</td>
+</tr>
+<tr>
+<td>1ST </td>
+<td>7000</td>
+<td>6000</td>
+
+</tr>
+<tr>
+<td>2ND</td>
+<td>7000</td>
+<td>6000</td>
+
+</tr>
+<tr>
+<td>3RD</td>
+<td>8000</td>
+<td>7000</td>
+
+</tr>
+<tr>
+<td>4TH</td>
+<td>9000</td>
+<td>8000</td>
+
+</tr>
+<tr>
+<td>5TH</td>
+<td>10000</td>
+<td>9000</td>
+
+</tr>
+<tr>
+<td>6TH</td>
+<td>11000</td>
+<td>10000</td>
+
+</tr>
+<tr>
+<td>7TH</td>
+<td>12000</td>
+<td>11000</td>
+
+</tr>
+<tr>
+<td>8TH</td>
+<td>13000</td>
+<td>12000</td>
+
+</tr>
+<tr>
+<td>9TH</td>
+<td>14000</td>
+<td>13000</td>
+
+</tr>
+<tr>
+<td>10TH</td>
+<td>15000</td>
+<td>14000</td>
+
+</tr>
+</table>
+
+      </md-tab>
+
+      <md-tab label="AWARDS" onclick="" >
+        <div class="carddemoBasicUsage">
+        <md-content class="md-padding" layout-xs="column" layout="row">
+       <div flex-xs="" flex-gt-xs="50" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/cricket.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="" background-color="000000">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/football.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+</div>
+ <div flex-xs="" flex-gt-xs="50" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/cricket.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+          <md-card-title>
+            <md-card-title-media>
+              <img src="icons/football.jpg" alt="Chania" width="100%" height="100%">
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
+      </div>
+      <div flex-xs="" flex-gt-xs="50" layout="column">
+             <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+               <md-card-title>
+                 <md-card-title-media>
+                   <img src="icons/cricket.jpg" alt="Chania" width="100%" height="100%">
+                 </md-card-title-media>
+               </md-card-title>
+             </md-card>
+
+             <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch="">
+               <md-card-title>
+                 <md-card-title-media>
+                   <img src="icons/football.jpg" alt="Chania" width="100%" height="100%">
+                 </md-card-title-media>
+               </md-card-title>
+             </md-card>
+           </div>
+    </md-content>
+  </div>
+      </md-tab>
+      <md-tab label="EXAMINATION" onclick="">
+        <H1 ALIGN=center>EXAMINATION TIME TABLE</H1>
+<table border =1 width=200 height= 200 align="CENTER" bgcolor="white" cellpadding=10 >
+
+  <caption>UNIT TEST-I</caption>
+
+
+<tr>
+<th>TIMINGS</th>
+<th>MONDAY</th>
+<th>TUESDAY</th>
+<th>WEDNESDAY</th>
+<th>THURSDAY</th>
+<th>FRIDAY</th>
+<th>SATURDAY</th>
+</tr>
+<tr>
+<td>UNIT TEST(A.M)</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td>
+</tr>
+<tr>
+<td>ASSIGNMENT TEST(P.M)</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td>
+</tr>
+</table>
+<BR><BR>
+
+
+<hr>
+<table border =1 width=200 height= 200 align="CENTER" bgcolor="white" cellpadding=10>
+
+  <caption>UNIT TEST-II</caption>
+
+
+<tr>
+<th>TIMINGS</th>
+<th>MONDAY</th>
+<th>TUESDAY</th>
+<th>WEDNESDAY</th>
+<th>THURSDAY</th>
+<th>FRIDAY</th>
+<th>SATURDAY</th>
+</tr>
+<tr>
+<td>UNIT TEST(A.M)</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td>
+</tr>
+<tr>
+<td>ASSIGNMENT TEST(P.M)</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td>
+</tr>
+</table>
+
+<HR>
+<table border =1 width=200 height= 200 align="CENTER" bgcolor="white" cellpadding=10>
+
+  <caption>QUATERLY EXAMINATION</caption>
+
+
+<tr>
+<th>TIMINGS</th>
+<th>MONDAY</th>
+<th>TUESDAY</th>
+<th>WEDNESDAY</th>
+<th>THURSDAY</th>
+<th>FRIDAY</th>
+<th>SATURDAY</th>
+</tr>
+<tr>
+<FONT TEXT-ALIGN="CENTER">
+<td>MORNING</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td></FONT>
+</tr>
+</table>
+<HR>
+<table border =1 width=200 height= 200 align="CENTER" bgcolor="white" cellpadding=10 >
+
+  <caption>HALFYEARLY EXAMINATION</caption>
+
+
+<tr>
+<th>TIMINGS</th>
+<th>MONDAY</th>
+<th>TUESDAY</th>
+<th>WEDNESDAY</th>
+<th>THURSDAY</th>
+<th>FRIDAY</th>
+<th>SATURDAY</th>
+</tr>
+<tr>
+<FONT TEXT-ALIGN="CENTER">
+<td>MORNING</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td></FONT>
+</tr>
+</table>
+<HR>
+<table border=1  width=200 height= 200 align="CENTER" bgcolor="white" cellpadding=10>
+
+  <caption>FINAL EXAMINATION</caption>
+
+
+<tr>
+<th>TIMINGS</th>
+<th>MONDAY</th>
+<th>TUESDAY</th>
+<th>WEDNESDAY</th>
+<th>THURSDAY</th>
+<th>FRIDAY</th>
+<th>SATURDAY</th>
+</tr>
+<tr>
+<FONT TEXT-ALIGN="CENTER">
+<td>MORNING</td>
+<td>HINDI</td>
+<td>TELUGU</td>
+<td>ENGLISH</td>
+<td>MATHS</td>
+<td>SCIENCE</td>
+<td>SOCIAL</td></FONT>
+</tr>
+</TABLE>
+      </md-tab>
+      <md-tab label="STUDENT DESK" onclick="">
+          <table ALIGN="CENTER" width="40%" style=" position: relative; top:0px">
+            <tr>
+              <td>
+                <div class="container">
+                           <div id="loginbox" style="margin-top:10px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                               <div class="panel panel-info" >
+                                       <div class="panel-heading">
+                                           <div class="panel-title">STUDENT LOGIN</div>
+
+                                       </div>
+
+                                       <div style="padding-top:30px" class="panel-body" >
+
+                                           <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                                           <form id="loginformstudent" class="form-horizontal" role="form">
+
+                                               <div style="margin-bottom: 25px" class="input-group">
+                                                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                           <input ng-model="stuusername" id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                       </div>
+
+                                               <div style="margin-bottom: 25px" class="input-group">
+                                                           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                           <input ng-model="stupassword" id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                       </div>
+
+
+                                                   <div style="margin-top:10px" class="form-group">
+                                                       <!-- Button -->
+                                                       <div class="col-sm-12 controls">
+                                                         <a id="btn-login" href="login.html" target="_blank" class="btn btn-success" ng-click="data()">Login  </a>
+
+                                                       </div>
+                                                   </div>
+                                               </form>
+                                           </div>
+                                       </div>
+                           </div>
+                       </div>
+                       <div class="container">
+                           <div id="loginbox" style="margin-top:10px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                               <div class="panel panel-info" >
+                                       <div class="panel-heading">
+                                           <div class="panel-title">FACULTY LOGIN</div>
+
+                                       </div>
+
+                                       <div style="padding-top:30px" class="panel-body" >
+
+                                           <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                                           <form id="loginformteacher" class="form-horizontal" role="form">
+
+                                               <div style="margin-bottom: 25px" class="input-group">
+                                                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                           <input ng-model="teausername" id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                       </div>
+
+                                               <div style="margin-bottom: 25px" class="input-group">
+                                                           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                           <input ng-model="teapassword" id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                       </div>
+                                                   <div style="margin-top:10px" class="form-group">
+                                                       <!-- Button -->
+                                                       <div class="col-sm-12 controls">
+                                                         <a id="btn-login" href="login.html" target="_blank" class="btn btn-success" ng-click="data1()">Login  </a>
+
+                                                       </div>
+                                                   </div>
+                                               </form>
+                                           </div>
+                                       </div>
+                                    </div>
+                       </div>
+                     </td>
+            </tr>
+          </table>
+      </md-tab>
+
+    </md-tabs>
+  </md-content>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-cookies.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <meta charset="utf-8">
+    <title>AngularJS Cookies Example</title>
+</head>
+<body ng-controller="AppCtrl">
+     {{myFruit}}
+    <script>
+    (function () {
+    'use strict';
+    var selectedtab=0;
+    var username="shyam";
+    var MyApp=angular.module('MyApp',['ngCookies','ngMaterial'])
+        MyApp.controller('AppCtrl',['$scope', '$cookies', '$cookieStore', '$window',function($scope, $cookies, $cookieStore, $window, $mdDialog) {
+      var studentdata={"studentname":"Shyam Kumar","rollnumber":"1","class":"5th","section":"A","gender":"Male","fathername":"Ravi","mothername":"ramya","dateofbirth":"02/09/2010","dateofjoin":"08/06/2013",
+    "admission":"456","caste":"oc","religion":"hindu","address":"hyderabad","studentphone":"213123123","fatherphone":"767897897"};
+    $scope.studentdata=studentdata;
+    $scope.selectedtab=selectedtab;
+    $cookies.userName = 'Sandeep';
+    $scope.platformCookie = "";
+    $cookieStore.put('fruit', 'Apple');
+    $cookieStore.put('flower', 'Rose');
+    console.log($cookieStore.get('fruit'));
+    }]);
+
+       })();
+
+    </script>
+</body>
+
+</html>
