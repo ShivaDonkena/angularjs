@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 define('HOST','mysql6.000webhost.com');
 define('USER','a6701781_anduser');
-define('PASS','samanthakajal');
+define('PASS','*******');
 define('DB','a6701781_android');
 $con = mysqli_connect(HOST,USER,PASS,DB);
 $username = $_GET['username'];
